@@ -2,7 +2,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@DrobnjakS18"
   },
-  "name": "@DrobnjakS18/test-component-library",
+  "name": "@drobnjaks18/test-component-library",
   "version": "1.0.0",
   "description": "",
   "type": "module",
