@@ -1,7 +1,7 @@
 {
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
-     "access": "public"
+    "access": "public"
   },
   "name": "@drobnjaks/test-component-library",
   "version": "1.0.2",
@@ -51,6 +51,8 @@
     "husky": "^9.0.11",
     "jsdom": "^24.1.0",
     "lint-staged": "^15.2.7",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-mantine": "^1.15.0",
     "prettier": "^3.3.2",
     "storybook": "^8.1.10",
     "styled-components": "^6.1.11",
@@ -68,5 +70,9 @@
       "npm run lint",
       "npm run test"
     ]
+  },
+  "dependencies": {
+    "@mantine/core": "^7.11.0",
+    "@mantine/hooks": "^7.11.0"
   }
 }

@@ -1,5 +1,13 @@
 import React, { MouseEventHandler } from "react";
 import styled from "styled-components";
+import '@mantine/core/styles.css';
+import { Radio } from '@mantine/core';
+
+import { createTheme, MantineProvider } from '@mantine/core';
+
+const theme = createTheme({
+  /** Put your mantine theme override here */
+});
 
 export type ButtonProps = {
   text?: string;
@@ -37,16 +45,21 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <StyledButton
-      type="button"
-      onClick={onClick}
-      primary={primary}
-      disabled={disabled}
-      size={size}
-      {...props}
-    >
-      {text}
-    </StyledButton>
+    <MantineProvider theme={theme}>
+       <Radio
+      label="I cannot be unchecked"
+    />
+        {/* <StyledButton
+        type="button"
+        onClick={onClick}
+        primary={primary}
+        disabled={disabled}
+        size={size}
+        {...props}
+      >
+        {text}
+      </StyledButton> */}
+    </MantineProvider>
   );
 };
 
