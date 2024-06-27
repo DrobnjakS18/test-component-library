@@ -1,8 +1,9 @@
 {
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+     "access": "public"
   },
-  "name": "@drobnjaks18/test-component-library",
+  "name": "@drobnjaks/test-component-library",
   "version": "1.0.2",
   "description": "",
   "type": "module",
