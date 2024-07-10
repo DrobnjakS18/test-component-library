@@ -41,20 +41,20 @@ const Button: React.FC<ButtonProps> = ({
   primary,
   disabled,
   text,
+  color,
   onClick,
   ...props
 }) => {
   return (
     <MantineProvider theme={theme}>
-       {/* <Radio
-      label="I cannot be unchecked"
-    /> */}
+
         <MantineButton
         // type="button"
         // onClick={onClick}
         // primary={primary}
         // disabled={disabled}
-        // size={size}
+        color={color}
+        size={size}
         {...props}
       >
         {text}
