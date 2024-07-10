@@ -12,7 +12,8 @@ export type ButtonProps = {
   text?: string;
   primary?: boolean;
   disabled?: boolean;
-  size?: "small" | "medium" | "large";
+  color?: "red" | "blue" | "green" | "yellow" | "orange";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
